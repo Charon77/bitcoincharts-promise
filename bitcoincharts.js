@@ -117,8 +117,11 @@ function _addToOLHCArray(element, obj)
 	obj.close.push(element[4]);
 	obj.volume.push(element[5]);
 }
-		
-module.exports = {
-	OHLC: getOHLC,
-	lastPrice: getPrice
+
+// Not always are we running for Node.js
+if (module) {
+	module.exports = {
+		OHLC: getOHLC,
+		lastPrice: getPrice
+	}
 }
