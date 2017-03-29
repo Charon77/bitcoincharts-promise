@@ -119,7 +119,7 @@ function _addToOLHCArray(element, obj)
 }
 
 // Not always are we running for Node.js
-if (module) {
+if ('object' == typeof module) {
 	module.exports = {
 		OHLC: getOHLC,
 		lastPrice: getPrice
