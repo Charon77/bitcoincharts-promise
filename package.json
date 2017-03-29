@@ -1,0 +1,32 @@
+{
+  "name": "bitcoincharts-promise",
+  "description": "Wrapper bitcoincharts.com API client for that returns Promise",
+  "version": "1.0.0",
+  "keywords": [
+    "btc",
+    "bitcoin",
+    "bitcoincharts",
+    "promise"
+  ],
+  "author": "Evans Jahja",
+  "dependencies": {
+    "bitcoincharts": "0.0.8"
+  },
+  "main": "bitcoincharts.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charon77/bitcoincharts-promise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Charon77/bitcoincharts-promise/issues"
+  },
+  "homepage": "https://github.com/Charon77/bitcoincharts-promise#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}
