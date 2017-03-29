@@ -9,9 +9,6 @@
     "promise"
   ],
   "author": "Evans Jahja",
-  "dependencies": {
-    "bitcoincharts": "0.0.8"
-  },
   "main": "bitcoincharts.js",
   "engines": {
     "node": ">=0.8"
