@@ -1,5 +1,3 @@
-const request = require('request')
-
 function getPrice ({timeframe = 1, resolution = '30-min'} = {})
 {
 	// Get from bitcoin chart
@@ -118,10 +116,21 @@ function _addToOLHCArray(element, obj)
 	obj.volume.push(element[5]);
 }
 
-// Not always are we running for Node.js
-if ('object' == typeof module) {
-	module.exports = {
-		OHLC: getOHLC,
-		lastPrice: getPrice
-	}
+const BitcoinChartsExport = {
+	OHLC: getOHLC,
+	lastPrice: getPrice
 }
+
+// Running for Node.js
+if (typeof(module) == 'object') {
+	const request = require('request')
+	module.exports = BitcoinChartsExport
+}
+
+// Running for Require.js
+if (typeof('define') == 'function') {
+	define(['request'], (request) => {
+		return BitcoinChartsExport
+	})
+}
+
