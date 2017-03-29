@@ -128,7 +128,7 @@ if (typeof(module) == 'object') {
 }
 
 // Running for Require.js
-if (typeof('define') == 'function') {
+if (typeof(define) == 'function') {
 	console.log("Define called")
 	define(['request'], (request) => {
 		return BitcoinchartsFactory(request)
