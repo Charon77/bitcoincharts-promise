@@ -21,7 +21,9 @@
     "url": "https://github.com/Charon77/bitcoincharts-promise/issues"
   },
   "homepage": "https://github.com/Charon77/bitcoincharts-promise#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "browserify": "^14.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
