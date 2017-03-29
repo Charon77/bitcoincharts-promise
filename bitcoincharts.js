@@ -130,8 +130,10 @@ if (typeof(module) == 'object') {
 
 // Running for Require.js
 if (typeof('define') == 'function') {
+	console.log("Define callled")
 	define(['request'], (request_) => {
 		request = request_
+		console.log(request)
 		return BitcoinChartsExport
 	})
 }
