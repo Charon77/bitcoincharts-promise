@@ -1,3 +1,4 @@
+let request
 function getPrice ({timeframe = 1, resolution = '30-min'} = {})
 {
 	// Get from bitcoin chart
@@ -123,13 +124,14 @@ const BitcoinChartsExport = {
 
 // Running for Node.js
 if (typeof(module) == 'object') {
-	const request = require('request')
+	request = require('request')
 	module.exports = BitcoinChartsExport
 }
 
 // Running for Require.js
 if (typeof('define') == 'function') {
-	define(['request'], (request) => {
+	define(['request'], (request_) => {
+		request = request_
 		return BitcoinChartsExport
 	})
 }
