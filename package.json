@@ -1,7 +1,7 @@
 {
   "name": "bitcoincharts-promise",
   "description": "Wrapper bitcoincharts.com API client for that returns Promise",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "keywords": [
     "btc",
     "bitcoin",
