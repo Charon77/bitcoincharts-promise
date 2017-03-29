@@ -124,13 +124,17 @@ BitcoinchartsFactory = (request) => {
 // Running for Node.js
 if (typeof(module) == 'object') {
 	const request = require('request')
-	module.exports = BitcoinChartsExport(request)
+	module.exports = BitcoinchartsFactory(request)
 }
 
 // Running for Require.js
 if (typeof('define') == 'function') {
+	console.log("Define called")
 	define(['request'], (request) => {
 		return BitcoinchartsFactory(request)
 	})
+} else {
+	console.log("DEFINE iS")
+	console.log(define)
 }
 
