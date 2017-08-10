@@ -1,6 +1,8 @@
 bitcoincharts-promise
 =====
 
+[![Build Status](https://travis-ci.org/Charon77/bitcoincharts-promise.svg?branch=master)](https://travis-ci.org/Charon77/bitcoincharts-promise)
+
 (Unofficial) Promise-based [bitcoincharts](http://bitcoincharts.com/about/markets-api/) client.
 
 ## Installation
