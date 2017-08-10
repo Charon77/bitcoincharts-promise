@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/Charon77/bitcoincharts-promise#readme",
   "devDependencies": {
-    "browserify": "^14.1.0"
+    "browserify": "^14.1.0",
+    "standard": "^10.0.3"
   },
   "scripts": {
     "test": "node bitcoincharts.js > NUL && standard"
