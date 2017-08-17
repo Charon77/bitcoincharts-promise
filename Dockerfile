@@ -9,4 +9,4 @@ ADD . /app
 
 RUN npm install
 
-ENTRYPOINT ["npm", "test"]
+CMD ["npm", "test"]
